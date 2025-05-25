@@ -4,7 +4,7 @@ The Base Scene provides a complete setup for developing VR experiences in this p
 
 ## Scene Contents
 
-### [TXR\_Player (Prefab)](https://github.com/TAU-XR/TAUXR-OpenTemplate/blob/main/Docs/TxrPlayer.md)
+### [TXR\_Player (Prefab)](https://github.com/TAU-XR/TAUXR-Research-Template/blob/main/Docs/TxrPlayer.md)
 
 The XR camera rig. Includes:
 
@@ -12,7 +12,7 @@ The XR camera rig. Includes:
 *  `OVRFaceExpressions` component: enables face tracking on quest pro devices.
 * `PositionSetter`: allows switching between predefined starting positions for testing.
 
-### [TXR\_DataManager (Prefab)](https://github.com/TAU-XR/TAUXR-OpenTemplate/blob/main/Docs/TXR%20Data%20Manager.md)
+### [TXR\_DataManager (Prefab)](https://github.com/TAU-XR/TAUXR-Research-Template/blob/main/Docs/TXR%20Data%20Manager.md)
 
 Handles runtime data logging. Includes:
 
@@ -20,7 +20,7 @@ Handles runtime data logging. Includes:
 * `DataContinuousWriter`: logs headset, hands, and eye positions to CSV.
 * `DataExporterFaceExpression`: logs facial expression blendshape data if face tracking is enabled.
 
-### [TXR\_SceneManager (Prefab)](https://github.com/TAU-XR/TAUXR-OpenTemplate/blob/main/Docs/Scene%20Manager.md)
+### [TXR\_SceneManager (Prefab)](https://github.com/TAU-XR/TAUXR-Research-Template/blob/main/Docs/Scene%20Manager.md)
 
 Handles scene loading. Includes:
 
@@ -49,13 +49,13 @@ It should look something like this
 ## Usage Instructions
 
 1. Open the Base Scene (Assets/TAUXR/Base Scene/Base Scene) in Unity. 
-2. Add objects and interactive content to the scene directly, or load additional scenes additively by dragging them into the hierarchy. Configure them later in the Build Settings and `TXRSceneManager` as [described here](https://github.com/TAU-XR/TAUXR-OpenTemplate/blob/main/Docs/Scene%20Manager.md).
-3. The scene automatically initializes tracking, input, data export, and calibration logic at runtime. To view your exported data, see [this guide](https://github.com/TAU-XR/TAUXR-OpenTemplate/blob/main/View%20Exported%20Data.md).
+2. Add objects and interactive content to the scene directly, or load additional scenes additively by dragging them into the hierarchy. Configure them later in the Build Settings and `TXRSceneManager` as [described here](https://github.com/TAU-XR/TAUXR-Research-Template/blob/main/Docs/Scene%20Manager.md).
+3. The scene automatically initializes tracking, input, data export, and calibration logic at runtime. To view your exported data, see [this guide](https://github.com/TAU-XR/TAUXR-Research-Template/blob/main/Docs/View%20Exported%20Data.md).
 
 ### Causion: if you are prompted with this massage, choose "Keep using ovr hands" 
 
 <div align="center">
-<img src="https://github.com/TAU-XR/TAUXR-OpenTemplate/blob/main/Media/dont.png" width="500"/>
+<img src="https://github.com/TAU-XR/TAUXR-Research-Template/blob/main/Media/dont.png" width="500"/>
 </div>
 
 
