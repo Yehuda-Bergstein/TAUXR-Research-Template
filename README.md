@@ -12,7 +12,11 @@ This guide covers the key components of the toolkit:
 Each component is optimized for **Meta Quest devices**, streamlining development and improving performance.
 
 ---
+## Requirements
 
+- Unity 6 or  Unity 2022.3 LTS +
+
+---
 ## 🗂️ Unity Project Template
 
 Quickly jump into VR/XR development with our pre-configured Unity project template for Meta Quest. It includes:
