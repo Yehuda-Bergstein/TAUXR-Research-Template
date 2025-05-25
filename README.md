@@ -25,7 +25,7 @@ Quickly jump into VR/XR development with our pre-configured Unity project templa
 - Minimal setup for beginners  
 - A solid foundation to start building immersive content  
 
-➡️ [Get started using the Base Scene](https://github.com/TAU-XR/TAUXR-OpenTemplate/blob/main/Docs/Getting%20Started%20with%20Base%20Scene.md) – the foundational scene for all XR development and data logging.
+➡️ [Get started using the Base Scene](https://github.com/TAU-XR/TAUXR-Research-Template/blob/main/Docs/Getting%20Started%20with%20Base%20Scene.md) – the foundational scene for all XR development and data logging.
 
 ---
 
