@@ -54,4 +54,4 @@ Central to the toolkit, the **TXR Player** handles player presence and inputs:
 
 ---
 
-The Development of these tools was sponcered by the Minerva Center for Human Intelligence in immersive, augmented and mixed Realities.
+The Development of these tools was sponsored by the Minerva Center for Human Intelligence in immersive, augmented and mixed Realities.
