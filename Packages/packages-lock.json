@@ -1,14 +1,14 @@
 {
   "dependencies": {
     "com.meta.xr.sdk.core": {
-      "version": "76.0.0",
-      "depth": 1,
+      "version": "77.0.0",
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction": {
-      "version": "76.0.0",
+      "version": "77.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -18,12 +18,12 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction.ovr": {
-      "version": "76.0.0",
+      "version": "77.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "76.0.0",
-        "com.meta.xr.sdk.interaction": "76.0.0"
+        "com.meta.xr.sdk.core": "77.0.0",
+        "com.meta.xr.sdk.interaction": "77.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -88,13 +88,6 @@
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
       },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ide.vscode": {
-      "version": "1.2.5",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
