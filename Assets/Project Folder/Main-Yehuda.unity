@@ -347,6 +347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11549c8f0bc283249a8f50ac82f6b39e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  overrideSavePath: 1
+  savePath: C:\Users\bergstein2\Documents\DeviceNodeLoggerOutput
+  nodesToLog: 090000000300000004000000
 --- !u!1001 &1658430860
 PrefabInstance:
   m_ObjectHideFlags: 0
