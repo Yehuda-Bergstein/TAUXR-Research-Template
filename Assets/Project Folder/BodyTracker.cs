@@ -67,15 +67,21 @@ public class DeviceNodeLogger : MonoBehaviour
 
         var headers = new List<string> { "LogTime" }; // Unity Time.time seconds
 
-        // For each node add pose + velocity + angular velocity columns
+        // For each node add tracking flags + pose + velocity + angular velocity columns
         foreach (var node in nodesToLog)
         {
             string n = node.ToString();
             headers.AddRange(new[]
             {
+                // Tracking state flags (1=true, 0=false)
+                $"{n}_Present", $"{n}_PosTracked", $"{n}_RotTracked", $"{n}_PosValid", $"{n}_RotValid",
+                // Position data
                 $"{n}_PosX", $"{n}_PosY", $"{n}_PosZ",
+                // Rotation data  
                 $"{n}_RotX", $"{n}_RotY", $"{n}_RotZ", $"{n}_RotW",
+                // Velocity data
                 $"{n}_VelX", $"{n}_VelY", $"{n}_VelZ",
+                // Angular velocity data
                 $"{n}_AngVelX", $"{n}_AngVelY", $"{n}_AngVelZ"
             });
         }
@@ -96,11 +102,25 @@ public class DeviceNodeLogger : MonoBehaviour
             var velocity = OVRPlugin.GetNodeVelocity(node, OVRPlugin.Step.Render);
             var angularVelocity = OVRPlugin.GetNodeAngularVelocity(node, OVRPlugin.Step.Render);
 
+            // Get tracking state flags for this node
+            var nodePresent = OVRPlugin.GetNodePresent(node);
+            var positionTracked = OVRPlugin.GetNodePositionTracked(node);
+            var orientationTracked = OVRPlugin.GetNodeOrientationTracked(node);
+            var positionValid = OVRPlugin.GetNodePositionValid(node);
+            var orientationValid = OVRPlugin.GetNodeOrientationValid(node);
+
             // Convert to Unity coordinate system
             var position = posef.Position.FromFlippedZVector3f();
             var rotation = posef.Orientation.FromFlippedZQuatf();
             var vel = velocity.FromFlippedZVector3f();
             var angVel = angularVelocity.FromFlippedZVector3f();
+
+            // Write tracking state flags (as 1/0 for true/false)
+            values.Add(nodePresent ? "1" : "0");
+            values.Add(positionTracked ? "1" : "0");
+            values.Add(orientationTracked ? "1" : "0");
+            values.Add(positionValid ? "1" : "0");
+            values.Add(orientationValid ? "1" : "0");
 
             // Write position data with full precision (G17)
             values.Add(position.x.ToString("G17"));
